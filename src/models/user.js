@@ -8,6 +8,7 @@ const loanSchema = new mongoose.Schema({
     reason: { type: String, required: true },
     address: { type: String, required: true },
     allowed: { type: Boolean, default: false },
+    repaid: { type: Boolean, default: false },
     email: { type: String, required: true, unique: true, lowercase: true },
     date: { 
         type: String, 
